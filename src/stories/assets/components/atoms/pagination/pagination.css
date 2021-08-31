@@ -1,0 +1,41 @@
+@import '../../settings/_variables.css';
+
+.pagination {
+    background: transparent;
+}
+
+button:focus {
+    outline: none;
+}
+
+.buttons {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    height: 40px;
+    font-size: var(--p2);
+    color: var(--G100);
+}
+
+.buttonActivate {
+    background-color: var(--baseBlue);
+    color: var(--default);
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    height: 40px;
+    font-size: var(--p2);
+}
+
+.compact {
+    color: var(--G200);
+}
+
+.compact button {
+    border: none;
+    background: transparent;
+    color: var(--G100);
+    font-size: var(--p2);
+    padding: 12px 10px;
+}

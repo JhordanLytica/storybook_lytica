@@ -1,0 +1,130 @@
+@import '../../settings/_variables.css';
+
+.range .sliderValue {
+    position: relative;
+    width: 100%;
+}
+
+.range .sliderValue span {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    color: var(--default);
+    font-weight: 500;
+    top: -40px;
+    transform: translateX(-50%);
+    line-height: 55px;
+    z-index: 2;
+    text-align: center;
+}
+
+.range .sliderValue span:after {
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background-color: var(--baseBlue);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 3px solid var(--default);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--baseBlue); 
+}
+
+.left {
+    left: -22px;
+}
+
+.right {
+    right: -43px;
+}
+
+.range .field input {
+    -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background: var(--G400);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.range .field input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: var(--baseBlue);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Blue */
+.baseBlue .sliderValue span:after, .baseBlue .field input::-webkit-slider-thumb { background-color: var(--baseBlue) !important;}
+.LB20 .sliderValue span:after, .LB20 .field input::-webkit-slider-thumb { background-color: var(--LB20) !important;}
+.LB40 .sliderValue span:after, .LB40 .field input::-webkit-slider-thumb { background-color: var(--LB40) !important;}
+.LB60 .sliderValue span:after, .LB60 .field input::-webkit-slider-thumb { background-color: var(--LB60) !important;}
+.DB20 .sliderValue span:after, .DB20 .field input::-webkit-slider-thumb { background-color: var(--DB20) !important;}
+.DB40 .sliderValue span:after, .DB40 .field input::-webkit-slider-thumb { background-color: var(--DB40) !important;}
+.DB60 .sliderValue span:after, .DB60 .field input::-webkit-slider-thumb { background-color: var(--DB60) !important;}
+
+  /* Green */
+.baseGreen .sliderValue span:after, .baseGreen .field input::-webkit-slider-thumb { background-color: var(--baseGreen) !important;}
+.LG20 .sliderValue span:after, .LG20 .field input::-webkit-slider-thumb { background-color: var(--LG20) !important;}
+.LG40 .sliderValue span:after, .LG40 .field input::-webkit-slider-thumb { background-color: var(--LG40) !important;}
+.LG60 .sliderValue span:after, .LG60 .field input::-webkit-slider-thumb { background-color: var(--LG60) !important;}
+.DG20 .sliderValue span:after, .DG20 .field input::-webkit-slider-thumb { background-color: var(--DG20) !important;}
+.DG40 .sliderValue span:after, .DG40 .field input::-webkit-slider-thumb { background-color: var(--DG40) !important;}
+.DG60 .sliderValue span:after, .DG60 .field input::-webkit-slider-thumb { background-color: var(--DG60) !important;}
+
+  /* Orange */
+.baseOrange .sliderValue span:after, .baseOrange .field input::-webkit-slider-thumb { background-color: var(--baseOrange) !important;}
+.LO20 .sliderValue span:after, .LO20 .field input::-webkit-slider-thumb { background-color: var(--LO20) !important;}
+.LO40 .sliderValue span:after, .LO40 .field input::-webkit-slider-thumb { background-color: var(--LO40) !important;}
+.LO60 .sliderValue span:after, .LO60 .field input::-webkit-slider-thumb { background-color: var(--LO60) !important;}
+.DO20 .sliderValue span:after, .DO20 .field input::-webkit-slider-thumb { background-color: var(--DO20) !important;}
+.DO40 .sliderValue span:after, .DO40 .field input::-webkit-slider-thumb { background-color: var(--DO40) !important;}
+.DO60 .sliderValue span:after, .DO60 .field input::-webkit-slider-thumb { background-color: var(--DO60) !important;}
+
+  /* Red */
+.baseRed .sliderValue span:after, .baseRed .field input::-webkit-slider-thumb { background-color: var(--baseRed) !important;}
+.LR20 .sliderValue span:after, .LR20 .field input::-webkit-slider-thumb { background-color: var(--LR20) !important;}
+.LR40 .sliderValue span:after, .LR40 .field input::-webkit-slider-thumb { background-color: var(--LR40) !important;}
+.LR60 .sliderValue span:after, .LR60 .field input::-webkit-slider-thumb { background-color: var(--LR60) !important;}
+.DR20 .sliderValue span:after, .DR20 .field input::-webkit-slider-thumb { background-color: var(--DR20) !important;}
+.DR40 .sliderValue span:after, .DR40 .field input::-webkit-slider-thumb { background-color: var(--DR40) !important;}
+.DR60 .sliderValue span:after, .DR60 .field input::-webkit-slider-thumb { background-color: var(--DR60) !important;}
+
+  /* Pink */
+.basePink  .sliderValue span:after, .basePink  .field input::-webkit-slider-thumb { background-color: var(--basePink) !important;}
+.LP20 .sliderValue span:after, .LP20 .field input::-webkit-slider-thumb { background-color: var(--LP20) !important;}
+.LP40 .sliderValue span:after, .LP40 .field input::-webkit-slider-thumb { background-color: var(--LP40) !important;}
+.LP60 .sliderValue span:after, .LP60 .field input::-webkit-slider-thumb { background-color: var(--LP60) !important;}
+.DP20 .sliderValue span:after, .DP20 .field input::-webkit-slider-thumb { background-color: var(--DP20) !important;}
+.DP40 .sliderValue span:after, .DP40 .field input::-webkit-slider-thumb { background-color: var(--DP40) !important;}
+.DP60 .sliderValue span:after, .DP60 .field input::-webkit-slider-thumb { background-color: var(--DP60) !important;}
+
+.range {
+    height: 80px;
+    width: 380px;
+    background: var(--default) !important;
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+    border: solid 1px var(--baseBlue);
+}

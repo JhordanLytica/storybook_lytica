@@ -1,0 +1,26 @@
+.badgeContainer{
+    float: right;
+    margin-top: -28px;
+}
+
+.containerCard {
+    border-radius: 8px !important;
+    width: auto;
+    padding: 20px 16px !important;
+}
+
+.containerCard h2 {
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.containerCard p {
+    margin-top: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.badge p {
+    margin-top: 10px;
+}

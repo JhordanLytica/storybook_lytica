@@ -1,0 +1,71 @@
+@import '../../settings/_variables.css';
+.grid {
+    display: grid;
+    padding: 10px;
+    width: 100%;
+}
+
+.col1 {
+    grid-template-columns: auto;
+}
+
+.col2 {
+    grid-template-columns: auto auto;
+}
+
+.col3 {
+    grid-template-columns: auto auto auto;
+}
+
+.col4 {
+    grid-template-columns: auto auto auto auto;
+}
+
+.s0 {
+    grid-gap: 0px;
+}
+
+.s1 {
+    grid-gap: 4px;
+}
+
+.s2 {
+    grid-gap: 8px;
+}
+
+.s3 {
+    grid-gap: 12px;
+}
+
+.s4 {
+    grid-gap: 16px;
+}
+
+.s5 {
+    grid-gap: 20px;
+}
+
+.s6 {
+    grid-gap: 24px;
+}
+
+.s7 {
+    grid-gap: 28px;
+}
+
+.s8 {
+    grid-gap: 32px;
+}
+
+.s9 {
+    grid-gap: 36px;
+}
+
+.s10 {
+    grid-gap: 40px;
+}
+.grid > div {
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 10px;
+}

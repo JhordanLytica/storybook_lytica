@@ -1,0 +1,15 @@
+.badge{
+    width: 52px;
+    height: 24px;
+    border-radius: 6px;
+}
+
+.rotarD {
+    transform: rotate(-45deg);
+    margin-left: 4px;
+}
+
+.rotarI {
+    transform: rotate(30deg);
+    margin-left: 4px;
+}

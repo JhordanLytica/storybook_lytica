@@ -1,0 +1,106 @@
+@import '../../settings/_variables.css';
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--G400);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch span:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--G500);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input:checked + span {
+  background-color: var(--baseBlue);
+}
+
+.switch input:focus + span {
+  box-shadow: 0 0 1px var(--baseBlue);
+}
+
+.switch input:checked + span:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.circle span {
+  border-radius: 34px;
+}
+
+.circle span:before {
+  border-radius: 50%;
+}
+
+/* Blue */
+.SWbaseBlue  input:checked + span { background-color: var(--baseBlue) !important;}
+.SWLB20  input:checked + span { background-color: var(--LB20) !important;}
+.SWLB40  input:checked + span { background-color: var(--LB40) !important;}
+.SWLB60  input:checked + span { background-color: var(--LB60) !important;}
+.SWDB20  input:checked + span { background-color: var(--DB20) !important;}
+.SWDB40  input:checked + span { background-color: var(--DB40) !important;}
+.SWDB60  input:checked + span { background-color: var(--DB60) !important;}
+
+  /* Green */
+.SWbaseGreen  input:checked + span { background-color: var(--baseGreen) !important;}
+.SWLG20  input:checked + span { background-color: var(--LG20) !important;}
+.SWLG40  input:checked + span { background-color: var(--LG40) !important;}
+.SWLG60  input:checked + span { background-color: var(--LG60) !important;}
+.SWDG20  input:checked + span { background-color: var(--DG20) !important;}
+.SWDG40  input:checked + span { background-color: var(--DG40) !important;}
+.SWDG60  input:checked + span { background-color: var(--DG60) !important;}
+
+  /* Orange */
+.SWbaseOrange  input:checked + span { background-color: var(--baseOrange) !important;}
+.SWLO20  input:checked + span { background-color: var(--LO20) !important;}
+.SWLO40  input:checked + span { background-color: var(--LO40) !important;}
+.SWLO60  input:checked + span { background-color: var(--LO60) !important;}
+.SWDO20  input:checked + span { background-color: var(--DO20) !important;}
+.SWDO40  input:checked + span { background-color: var(--DO40) !important;}
+.SWDO60  input:checked + span { background-color: var(--DO60) !important;}
+
+  /* Red */
+.SWbaseRed  input:checked + span { background-color: var(--baseRed) !important;}
+.SWLR20  input:checked + span { background-color: var(--LR20) !important;}
+.SWLR40  input:checked + span { background-color: var(--LR40) !important;}
+.SWLR60  input:checked + span { background-color: var(--LR60) !important;}
+.SWDR20  input:checked + span { background-color: var(--DR20) !important;}
+.SWDR40  input:checked + span { background-color: var(--DR40) !important;}
+.SWDR60  input:checked + span { background-color: var(--DR60) !important;}
+
+  /* Pink */
+.SWbasePink   input:checked + span { background-color: var(--basePink) !important;}
+.SWLP20  input:checked + span { background-color: var(--LP20) !important;}
+.SWLP40  input:checked + span { background-color: var(--LP40) !important;}
+.SWLP60  input:checked + span { background-color: var(--LP60) !important;}
+.SWDP20  input:checked + span { background-color: var(--DP20) !important;}
+.SWDP40  input:checked + span { background-color: var(--DP40) !important;}
+.SWDP60  input:checked + span { background-color: var(--DP60) !important;}

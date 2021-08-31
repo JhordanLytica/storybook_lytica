@@ -1,0 +1,21 @@
+@import '../../settings/_variables.css';
+.notifications {
+    width: 28px;
+    height: 24px;
+    font-size: 20px;
+}
+
+.numberNoti {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: var(--default);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    float: right;
+    margin-top: -30px;
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+@import '../../settings/_variables.css';
+.dashboard {
+    margin: 0px;
+    padding: 0px;
+    min-height: 672px;
+}
+
+.dashboardContainer {
+    position: absolute;
+    top: 120px;
+    left: 296px;
+    max-width: 1177px;
+    height: auto;
+    padding: 20px 36px 26px 40px;
+    background-color: rgba(247, 247, 247, 1);
+    border-top: 1px solid var(--G400);
+}
+
+.butonDowload {
+    height: 20px;
+    float: right;
+    margin-top: -6px;
+}
+
+.butonMenu{
+    height: 20px;
+    float: right;
+    margin-top: 5px;
+}

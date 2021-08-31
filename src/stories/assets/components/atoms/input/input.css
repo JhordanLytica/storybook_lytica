@@ -1,0 +1,125 @@
+@import '../../settings/_variables.css';
+
+body, label {
+	font-family: var(--base-font-family);
+}
+
+/* Spaces */
+
+.paddingSmall {
+	padding: 4px 8px !important;
+}
+
+.paddingMedium {
+	padding: 8px 12px !important;
+}
+
+.paddingLarge {
+	padding: 12px 16px !important;
+}
+
+.marginSmall {
+	margin: 8px;
+}
+
+.marginMedium {
+	margin: 12px;
+}
+
+.marginLarge {
+	margin: 16px;
+}
+
+/* Size */
+.small, .small input, .small textarea {
+	padding: 4px 8px !important;
+	font-size: var(--p3) !important;
+}
+
+.medium, .medium input, .medium textarea {
+	padding: 8px 12px !important;
+	font-size: var(--p2) !important;
+}
+
+.large, .large input, .large textarea {
+	padding: 12px 16px !important;
+	font-size: var(--p1) !important;
+}
+	/* Center */
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+/* INPUT */
+
+.inputContainer {
+    padding: 10px;
+    width: auto;
+}
+
+.inputContainer input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid var(--G200);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--base-font-family);
+}
+
+/* Error */
+.error label, .error div {
+    color: var(--baseRed) !important;
+}
+
+.error input:focus{
+    border: 3px solid var(--baseRed) !important;
+    outline: none;
+}
+
+.error input {
+    border: 2px solid var(--baseRed) !important;
+}
+
+/* Success */
+
+.success label, .success div {
+    color: var(--baseGreen) !important;
+}
+
+.success input:focus{
+    border: 3px solid var(--baseGreen) !important;
+    outline: none;
+}
+
+.success input {
+    border: 2px solid var(--baseGreen) !important;
+}
+
+/* Icons */
+
+.iconLeft input {
+    width: 95%;
+    float: right;
+}
+
+.iconRight input {
+    width: 95%;
+    float: left;
+}
+
+.accion {
+    width: 13px;
+    height: 13px;
+    margin: 0px 5px 0px 5px;
+}
+
+.containerAccion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

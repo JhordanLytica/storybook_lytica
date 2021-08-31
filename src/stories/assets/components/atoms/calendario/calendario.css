@@ -1,0 +1,90 @@
+@import '../../settings/_variables.css';
+.react-calendar{
+    width: 306px;
+    min-height: 280px;
+    background: var(--default);
+    border: 1px solid var(--default);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1), 0px 1px 18px rgba(0, 0, 0, 0.06), 0px 6px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 10px;
+}
+.react-calendar button {
+    margin: 0;
+    border: 0;
+    font-size: var(--p2);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.react-calendar__tile {
+    max-width: 100%;
+    text-align: center;
+    padding: 0.75em 0.5em;
+    background: none;
+}
+
+.react-calendar__month-view__days__day{
+    color: var(--G200);
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: var(--G300);
+}
+
+.react-calendar, .react-calendar *, .react-calendar *:before, .react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Days and months */
+.react-calendar__tile--active, .react-calendar__tile--hasActive, .react-calendar__tile--hasActive {
+    background: var(--baseBlue);
+    color: var(--default) !important;
+    border-radius: 8px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    padding: 0.5em;
+}
+
+/* Days */
+
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    font-size: var(--h6);
+    color: var(--G300);
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+abbr[title]{
+    text-decoration: none !important;
+}
+
+/* Navigation */
+.react-calendar__navigation__prev2-button, 
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__next-button {
+    min-width: 20px;
+    background: none;
+    color: var(--G300);
+    font-size: 20px !important;
+}
+
+.react-calendar__navigation__label__labelText--from{
+    font-size: var(--h5) !important;
+    color: var(--G100) !important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* months */
+.react-calendar__year-view__months__month{
+    text-transform: capitalize;
+    color: var(--G200);
+}

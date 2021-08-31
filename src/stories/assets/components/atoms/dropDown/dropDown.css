@@ -1,0 +1,43 @@
+@import '../../settings/_variables.css';
+
+.containerDrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divIcon{
+    width: 24px;
+    height: 24px;
+    color: var(--G300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.ha {
+    background-color: var(--default);
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    position: relative;
+}
+
+.dropItem{
+    padding: 10px;
+    border-bottom: solid 1px var(--G500);
+}
+
+.dropItem:hover {
+    background-color: var(--G500);
+    cursor: pointer;
+}

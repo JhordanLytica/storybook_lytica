@@ -1,0 +1,7 @@
+@import '../../settings/_variables.css';
+
+.line{
+    background-color: var(--baseBlue) ;
+    height: 3px;
+    width: 100%;
+}

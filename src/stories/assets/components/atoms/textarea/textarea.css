@@ -1,0 +1,71 @@
+@import '../../settings/_variables.css';
+
+.textAreaContainer {
+    padding: 10px;
+    width: auto;
+}
+
+.textAreaContainer textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid var(--G200);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--base-font-family);
+}
+
+/* Error */
+.error label, .error div {
+    color: var(--baseRed) !important;
+}
+
+.error textarea:focus{
+    border: 3px solid var(--baseRed) !important;
+    outline: none;
+}
+
+.error textarea {
+    border: 2px solid var(--baseRed) !important;
+}
+
+/* Success */
+
+.success label, .success div {
+    color: var(--baseGreen) !important;
+}
+
+.success textarea:focus{
+    border: 3px solid var(--baseGreen) !important;
+    outline: none;
+}
+
+.success textarea {
+    border: 2px solid var(--baseGreen) !important;
+}
+
+
+/* Icons */
+
+.iconLeft textarea {
+    width: 95%;
+    float: right;
+}
+
+.iconRight textarea {
+    width: 95%;
+    float: left;
+}
+
+.accion {
+    width: 13px;
+    height: 13px;
+    margin: 0px 5px 0px 5px;
+}
+
+.containerAccion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

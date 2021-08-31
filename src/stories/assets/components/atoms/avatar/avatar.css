@@ -1,0 +1,806 @@
+@import '../../settings/_variables.css';
+
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+html {
+  /*animar scroll */
+  scroll-behavior: smooth;
+}
+
+.disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 10px
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--default);
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.activated {
+    background-color: var(--LG20);
+    border-radius: 50%;
+    float: right;
+    z-index: 2;
+    position: relative;
+}
+
+.avatar .activated {
+    width: 8px;
+    height: 8px;
+    margin-top: -10px;
+}
+
+.uno{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: var(--h6);
+}
+.dos{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: var(--h5);
+}
+.tres{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: var(--h4);
+}
+.cuatro{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: var(--h3);
+}
+.cinco{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: var(--h2);
+}
+
+.uno .activated {
+    width: 0px;
+    height: 0px;
+}
+
+.dos .activated {
+    width: 4px;
+    height: 4px;
+    margin-top: -10px;
+}
+
+.tres .activated {
+    width: 8px;
+    height: 8px;
+    margin-top: -10px;
+}
+
+.cuatro .activated {
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+}
+
+.cinco .activated {
+    width: 12px;
+    height: 12px;
+    margin-top: -16px;
+    margin-right: 5px;
+}
+/* E S T Y L E S  G L O B A L S */
+/* Spaces */
+
+.paddingSmall {
+  padding: 4px 8px !important;
+}
+
+.paddingMedium {
+  padding: 8px 12px !important;
+}
+
+.paddingLarge {
+  padding: 12px 16px !important;
+}
+
+.marginSmall {
+  margin: 8px;
+}
+
+.marginMedium {
+  margin: 12px;
+}
+
+.marginLarge {
+  margin: 16px;
+}
+
+/* Size */
+.small, .small input, .small textarea {
+  padding: 4px 8px !important;
+  font-size: var(--p3) !important;
+}
+
+.medium, .medium input, .medium textarea {
+  padding: 8px 12px !important;
+  font-size: var(--p2) !important;
+}
+
+.large, .large input, .large textarea {
+  padding: 12px 16px !important;
+  font-size: var(--p1) !important;
+}
+
+.Csmall {
+  font-size: var(--Caps3) !important;
+}
+
+.Cmedium {
+  font-size: var(--Caps2) !important;
+}
+
+.Clarge {
+  font-size: var(--Caps1) !important;
+}
+ /* Center */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* D I S A B L E D */
+
+.disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+/* B A C K G R O U N D */
+
+/* Blue */
+.baseBlue { background-color: var(--baseBlue) !important;}
+.LB20 { background-color: var(--LB20) !important;}
+.LB40 { background-color: var(--LB40) !important;}
+.LB60 { background-color: var(--LB60) !important;}
+.DB20 { background-color: var(--DB20) !important;}
+.DB40 { background-color: var(--DB40) !important;}
+.DB60 { background-color: var(--DB60) !important;}
+
+  /* Green */
+.baseGreen { background-color: var(--baseGreen) !important;}
+.LG20 { background-color: var(--LG20) !important;}
+.LG40 { background-color: var(--LG40) !important;}
+.LG60 { background-color: var(--LG60) !important;}
+.DG20 { background-color: var(--DG20) !important;}
+.DG40 { background-color: var(--DG40) !important;}
+.DG60 { background-color: var(--DG60) !important;}
+
+  /* Orange */
+.baseOrange { background-color: var(--baseOrange) !important;}
+.LO20 { background-color: var(--LO20) !important;}
+.LO40 { background-color: var(--LO40) !important;}
+.LO60 { background-color: var(--LO60) !important;}
+.DO20 { background-color: var(--DO20) !important;}
+.DO40 { background-color: var(--DO40) !important;}
+.DO60 { background-color: var(--DO60) !important;}
+
+  /* Red */
+.baseRed { background-color: var(--baseRed) !important;}
+.LR20 { background-color: var(--LR20) !important;}
+.LR40 { background-color: var(--LR40) !important;}
+.LR60 { background-color: var(--LR60) !important;}
+.DR20 { background-color: var(--DR20) !important;}
+.DR40 { background-color: var(--DR40) !important;}
+.DR60 { background-color: var(--DR60) !important;}
+
+  /* Pink */
+.basePink { background-color: var(--basePink) !important;}
+.LP20 { background-color: var(--LP20) !important;}
+.LP40 { background-color: var(--LP40) !important;}
+.LP60 { background-color: var(--LP60) !important;}
+.DP20 { background-color: var(--DP20) !important;}
+.DP40 { background-color: var(--DP40) !important;}
+.DP60 { background-color: var(--DP60) !important;}
+
+/* Gray */
+.G100 { background-color: var(--G100) !important;}
+.G200 { background-color: var(--G200) !important;}
+.G300 { background-color: var(--G300) !important;}
+.G400 { background-color: var(--G400) !important;}
+.G500 { background-color: var(--G500) !important;}
+.G600 { background-color: var(--G600) !important;}
+
+/* Background */
+.backgroundDarkPrimary { background-color: var(--backgroundDarkPrimary) !important;}
+.backgroundDarkSecondary { background-color: var(--backgroundDarkSecondary) !important;}
+.backgroundLightPrimary { background-color: var(--backgroundLightPrimary) !important;}
+.backgroundLightSecondary { background-color: var(--backgroundLightSecondary) !important;}
+.transparent { background-color: transparent !important; }
+
+/* B A C K G R O U N D  H O V E R*/
+
+/* Blue */
+.HbaseBlue:hover { background-color: var(--baseBlue) !important;}
+.HLB20:hover { background-color: var(--LB20) !important;}
+.HLB40:hover { background-color: var(--LB40) !important;}
+.HLB60:hover { background-color: var(--LB60) !important;}
+.HDB20:hover { background-color: var(--DB20) !important;}
+.HDB40:hover { background-color: var(--DB40) !important;}
+.HDB60:hover { background-color: var(--DB60) !important;}
+
+  /* Green */
+.HbaseGreen:hover { background-color: var(--baseGreen) !important;}
+.HLG20:hover { background-color: var(--LG20) !important;}
+.HLG40:hover { background-color: var(--LG40) !important;}
+.HLG60:hover { background-color: var(--LG60) !important;}
+.HDG20:hover { background-color: var(--DG20) !important;}
+.HDG40:hover { background-color: var(--DG40) !important;}
+.HDG60:hover { background-color: var(--DG60) !important;}
+
+  /* Orange */
+.HbaseOrange:hover { background-color: var(--baseOrange) !important;}
+.HLO20:hover { background-color: var(--LO20) !important;}
+.HLO40:hover { background-color: var(--LO40) !important;}
+.HLO60:hover { background-color: var(--LO60) !important;}
+.HDO20:hover { background-color: var(--DO20) !important;}
+.HDO40:hover { background-color: var(--DO40) !important;}
+.HDO60:hover { background-color: var(--DO60) !important;}
+
+  /* Red */
+.HbaseRed:hover { background-color: var(--baseRed) !important;}
+.HLR20:hover { background-color: var(--LR20) !important;}
+.HLR40:hover { background-color: var(--LR40) !important;}
+.HLR60:hover { background-color: var(--LR60) !important;}
+.HDR20:hover { background-color: var(--DR20) !important;}
+.HDR40:hover { background-color: var(--DR40) !important;}
+.HDR60:hover { background-color: var(--DR60) !important;}
+
+  /* Pink */
+.HbasePink:hover { background-color: var(--basePink) !important;}
+.HLP20:hover { background-color: var(--LP20) !important;}
+.HLP40:hover { background-color: var(--LP40) !important;}
+.HLP60:hover { background-color: var(--LP60) !important;}
+.HDP20:hover { background-color: var(--DP20) !important;}
+.HDP40:hover { background-color: var(--DP40) !important;}
+.HDP60:hover { background-color: var(--DP60) !important;}
+
+/* Gray */
+.HG100:hover { background-color: var(--G100) !important;}
+.HG200:hover { background-color: var(--G200) !important;}
+.HG300:hover { background-color: var(--G300) !important;}
+.HG400:hover { background-color: var(--G400) !important;}
+.HG500:hover { background-color: var(--G500) !important;}
+.HG600:hover { background-color: var(--G600) !important;}
+
+/* Background */
+.HbackgroundDarkPrimary:hover { background-color: var(--backgroundDarkPrimary) !important;}
+.HbackgroundDarkSecondary:hover { background-color: var(--backgroundDarkSecondary) !important;}
+.HbackgroundLightPrimary:hover { background-color: var(--backgroundLightPrimary) !important;}
+.HbackgroundLightSecondary:hover { background-color: var(--backgroundLightSecondary) !important;}
+.Htransparent:hover { background-color: transparent !important; }
+
+
+/* B A C K G R O U N D  F O C U S*/
+
+/* Blue */
+.FbaseBlue { background-color: var(--baseBlue); color: var(--default);}
+.FLB20 { background-color: var(--LB20); color: var(--default);}
+.FLB40 { background-color: var(--LB40); color: var(--default);}
+.FLB60 { background-color: var(--LB60); color: var(--default);}
+.FDB20 { background-color: var(--DB20); color: var(--default);}
+.FDB40 { background-color: var(--DB40); color: var(--default);}
+.FDB60 { background-color: var(--DB60); color: var(--default);}
+
+  /* Green */
+.FbaseGreen { background-color: var(--baseGreen); color: var(--default);}
+.FLG20 { background-color: var(--LG20); color: var(--default);}
+.FLG40 { background-color: var(--LG40); color: var(--default);}
+.FLG60 { background-color: var(--LG60); color: var(--default);}
+.FDG20 { background-color: var(--DG20); color: var(--default);}
+.FDG40 { background-color: var(--DG40); color: var(--default);}
+.FDG60 { background-color: var(--DG60); color: var(--default);}
+
+  /* Orange */
+.FbaseOrange { background-color: var(--baseOrange); color: var(--default);}
+.FLO20 { background-color: var(--LO20); color: var(--default);}
+.FLO40 { background-color: var(--LO40); color: var(--default);}
+.FLO60 { background-color: var(--LO60); color: var(--default);}
+.FDO20 { background-color: var(--DO20); color: var(--default);}
+.FDO40 { background-color: var(--DO40); color: var(--default);}
+.FDO60 { background-color: var(--DO60); color: var(--default);}
+
+  /* Red */
+.FbaseRed { background-color: var(--baseRed); color: var(--default);}
+.FLR20 { background-color: var(--LR20); color: var(--default);}
+.FLR40 { background-color: var(--LR40); color: var(--default);}
+.FLR60 { background-color: var(--LR60); color: var(--default);}
+.FDR20 { background-color: var(--DR20); color: var(--default);}
+.FDR40 { background-color: var(--DR40); color: var(--default);}
+.FDR60 { background-color: var(--DR60); color: var(--default);}
+
+  /* Pink */
+.FbasePink { background-color: var(--basePink); color: var(--default);}
+.FLP20 { background-color: var(--LP20); color: var(--default);}
+.FLP40 { background-color: var(--LP40); color: var(--default);}
+.FLP60 { background-color: var(--LP60); color: var(--default);}
+.FDP20 { background-color: var(--DP20); color: var(--default);}
+.FDP40 { background-color: var(--DP40); color: var(--default);}
+.FDP60 { background-color: var(--DP60); color: var(--default);}
+
+/* Gray */
+.FG100 { background-color: var(--G100); color: var(--default);}
+.FG200 { background-color: var(--G200); color: var(--default);}
+.FG300 { background-color: var(--G300); color: var(--default);}
+.FG400 { background-color: var(--G400); color: var(--default);}
+.FG500 { background-color: var(--G500); color: var(--default);}
+.FG600 { background-color: var(--G600); color: var(--default);}
+
+
+/* C O L O R S */
+
+/* Blue */
+.CbaseBlue, .CbaseBlue label { color: var(--baseBlue) !important;}
+.CLB20, .CLB20 label { color: var(--LB20) !important;}
+.CLB40, .CLB40 label { color: var(--LB40) !important;}
+.CLB60, .CLB60 label { color: var(--LB60) !important;}
+.CDB20, .CDB20 label { color: var(--DB20) !important;}
+.CDB40, .CDB40 label { color: var(--DB40) !important;}
+.CDB60, .CDB60 label { color: var(--DB60) !important;}
+
+  /* Green */
+.CbaseGreen, .CbaseGreen label { color: var(--baseGreen) !important;}
+.CLG20, .CLG20 label { color: var(--LG20) !important;}
+.CLG40, .CLG40 label { color: var(--LG40) !important;}
+.CLG60, .CLG60 label { color: var(--LG60) !important;}
+.CDG20, .CDG20 label { color: var(--DG20) !important;}
+.CDG40, .CDG40 label { color: var(--DG40) !important;}
+.CDG60, .CDG60 label { color: var(--DG60) !important;}
+  
+  /* Orange */
+.CbaseOrange, .CbaseOrange label { color: var(--baseOrange) !important;}
+.CLO20, .CLO20 label { color: var(--LO20) !important;}
+.CLO40, .CLO40 label { color: var(--LO40) !important;}
+.CLO60, .CLO60 label { color: var(--LO60) !important;}
+.CDO20, .CDO20 label { color: var(--DO20) !important;}
+.CDO40, .CDO40 label { color: var(--DO40) !important;}
+.CDO60, .CDO60 label { color: var(--DO60) !important;}
+  
+  /* Red */
+.CbaseRed, .CbaseRed label { color: var(--baseRed) !important;}
+.CLR20, .CLR20 label { color: var(--LR20) !important;}
+.CLR40, .CLR40 label { color: var(--LR40) !important;}
+.CLR60, .CLR60 label { color: var(--LR60) !important;}
+.CDR20, .CDR20 label { color: var(--DR20) !important;}
+.CDR40, .CDR40 label { color: var(--DR40) !important;}
+.CDR60, .CDR60 label { color: var(--DR60) !important;}
+  
+  /* Pink */
+.CbasePink, .CbasePink  label { color: var(--basePink) !important;}
+.CLP20, .CLP20 label { color: var(--LP20) !important;}
+.CLP40, .CLP40 label { color: var(--LP40) !important;}
+.CLP60, .CLP60 label { color: var(--LP60) !important;}
+.CDP20, .CDP20 label { color: var(--DP20) !important;}
+.CDP40, .CDP40 label { color: var(--DP40) !important;}
+.CDP60, .CDP60 label { color: var(--DP60) !important;}
+
+/* gray */
+
+.CG100, .CG100 label { color: var(--G100) !important;}
+.CG200, .CG200 label { color: var(--G200) !important;}
+.CG300, .CG300 label { color: var(--G300) !important;}
+.CG400, .CG400 label { color: var(--G400) !important;}
+.CG500, .CG500 label { color: var(--G500) !important;}
+.CG600, .CG600 label { color: var(--G600) !important;}
+
+.Ctransparent { color: transparent !important; }
+
+/* C O L O R S */
+
+/* Blue */
+.HCbaseBlue:hover { color: var(--baseBlue) !important;}
+.HCLB20:hover, .HCLB20:hover label { color: var(--LB20) !important;}
+.HCLB40:hover, .HCLB40:hover label { color: var(--LB40) !important;}
+.HCLB60:hover, .HCLB60:hover label { color: var(--LB60) !important;}
+.HCDB20:hover, .HCDB20:hover label { color: var(--DB20) !important;}
+.HCDB40:hover, .HCDB40:hover label { color: var(--DB40) !important;}
+.HCDB60:hover, .HCDB60:hover label { color: var(--DB60) !important;}
+
+  /* Green */
+.HCbaseGreen:hover { color: var(--baseGreen) !important;}
+.HCLG20:hover, .HCLG20:hover label { color: var(--LG20) !important;}
+.HCLG40:hover, .HCLG40:hover label { color: var(--LG40) !important;}
+.HCLG60:hover, .HCLG60:hover label { color: var(--LG60) !important;}
+.HCDG20:hover, .HCDG20:hover label { color: var(--DG20) !important;}
+.HCDG40:hover, .HCDG40:hover label { color: var(--DG40) !important;}
+.HCDG60:hover, .HCDG60:hover label { color: var(--DG60) !important;}
+  
+  /* Orange */
+.HCbaseOrange:hover { color: var(--baseOrange) !important;}
+.HCLO20:hover, .HCLO20:hover label { color: var(--LO20) !important;}
+.HCLO40:hover, .HCLO40:hover label { color: var(--LO40) !important;}
+.HCLO60:hover, .HCLO60:hover label { color: var(--LO60) !important;}
+.HCDO20:hover, .HCDO20:hover label { color: var(--DO20) !important;}
+.HCDO40:hover, .HCDO40:hover label { color: var(--DO40) !important;}
+.HCDO60:hover, .HCDO60:hover label { color: var(--DO60) !important;}
+  
+  /* Red */
+.HCbaseRed:hover { color: var(--baseRed) !important;}
+.HCLR20:hover, .HCLR20:hover label { color: var(--LR20) !important;}
+.HCLR40:hover, .HCLR40:hover label { color: var(--LR40) !important;}
+.HCLR60:hover, .HCLR60:hover label { color: var(--LR60) !important;}
+.HCDR20:hover, .HCDR20:hover label { color: var(--DR20) !important;}
+.HCDR40:hover, .HCDR40:hover label { color: var(--DR40) !important;}
+.HCDR60:hover, .HCDR60:hover label { color: var(--DR60) !important;}
+  
+  /* Pink */
+.HCbasePink:hover { color: var(--basePink) !important;}
+.HCLP20:hover, .HCLP20:hover label { color: var(--LP20) !important;}
+.HCLP40:hover, .HCLP40:hover label { color: var(--LP40) !important;}
+.HCLP60:hover, .HCLP60:hover label { color: var(--LP60) !important;}
+.HCDP20:hover, .HCDP20:hover label { color: var(--DP20) !important;}
+.HCDP40:hover, .HCDP40:hover label { color: var(--DP40) !important;}
+.HCDP60:hover, .HCDP60:hover label { color: var(--DP60) !important;}
+
+/* gray */
+
+.HCG100:hover, .HCG100:hover label { color: var(--G100) !important;}
+.HCG200:hover, .HCG200:hover label { color: var(--G200) !important;}
+.HCG300:hover, .HCG300:hover label { color: var(--G300) !important;}
+.HCG400:hover, .HCG400:hover label { color: var(--G400) !important;}
+.HCG500:hover, .HCG500:hover label { color: var(--G500) !important;}
+.HCG600:hover, .HCG600:hover label { color: var(--G600) !important;}
+
+
+/* B O R D E R   C O L O R S */
+
+/* Blue */
+.BbaseBlue, .BbaseBlue select:focus, .BbaseBlue select:hover, .BbaseBlue select { border: 3px solid var(--baseBlue) !important;}
+.BLB20, .BLB20 select:focus, .BLB20 select:hover, .BLB20 select { border: 3px solid var(--LB20) !important;}
+.BLB40, .BLB40 select:focus, .BLB40 select:hover, .BLB40 select { border: 3px solid var(--LB40) !important;}
+.BLB60, .BLB60 select:focus, .BLB60 select:hover, .BLB60 select { border: 3px solid var(--LB60) !important;}
+.BDB20, .BDB20 select:focus, .BDB20 select:hover, .BDB20 select { border: 3px solid var(--DB20) !important;}
+.BDB40, .BDB40 select:focus, .BDB40 select:hover, .BDB40 select { border: 3px solid var(--DB40) !important;}
+.BDB60, .BDB60 select:focus, .BDB60 select:hover, .BDB60 select { border: 3px solid var(--DB60) !important;}
+
+  /* Green */
+.BbaseGreen, .BbaseGreen select:focus, .BbaseGreen select:hover, .BbaseGreen select { border: 3px solid var(--baseGreen) !important;}
+.BLG20, .BLG20 select:focus, .BLG20 select:hover, .BLG20 select { border: 3px solid var(--LG20) !important;}
+.BLG40, .BLG40 select:focus, .BLG40 select:hover, .BLG40 select { border: 3px solid var(--LG40) !important;}
+.BLG60, .BLG60 select:focus, .BLG60 select:hover, .BLG60 select { border: 3px solid var(--LG60) !important;}
+.BDG20, .BDG20 select:focus, .BDG20 select:hover, .BDG20 select { border: 3px solid var(--DG20) !important;}
+.BDG40, .BDG40 select:focus, .BDG40 select:hover, .BDG40 select { border: 3px solid var(--DG40) !important;}
+.BDG60, .BDG60 select:focus, .BDG60 select:hover, .BDG60 select { border: 3px solid var(--DG60) !important;}
+  
+  /* Orange */
+.BbaseOrange, .BbaseOrange select:focus, .BbaseOrange select:hover, .BbaseOrange select { border: 3px solid var(--baseOrange) !important;}
+.BLO20, .BLO20 select:focus, .BLO20 select:hover, .BLO20 select { border: 3px solid var(--LO20) !important;}
+.BLO40, .BLO40 select:focus, .BLO40 select:hover, .BLO40 select { border: 3px solid var(--LO40) !important;}
+.BLO60, .BLO60 select:focus, .BLO60 select:hover, .BLO60 select { border: 3px solid var(--LO60) !important;}
+.BDO20, .BDO20 select:focus, .BDO20 select:hover, .BDO20 select { border: 3px solid var(--DO20) !important;}
+.BDO40, .BDO40 select:focus, .BDO40 select:hover, .BDO40 select { border: 3px solid var(--DO40) !important;}
+.BDO60, .BDO60 select:focus, .BDO60 select:hover, .BDO60 select { border: 3px solid var(--DO60) !important;}
+  
+  /* Red */
+.BbaseRed, .BbaseRed select:focus, .BbaseRed select:hover, .BbaseRed select { border: 3px solid var(--baseRed) !important;}
+.BLR20, .BLR20 select:focus, .BLR20 select:hover, .BLR20 select { border: 3px solid var(--LR20) !important;}
+.BLR40, .BLR40 select:focus, .BLR40 select:hover, .BLR40 select { border: 3px solid var(--LR40) !important;}
+.BLR60, .BLR60 select:focus, .BLR60 select:hover, .BLR60 select { border: 3px solid var(--LR60) !important;}
+.BDR20, .BDR20 select:focus, .BDR20 select:hover, .BDR20 select { border: 3px solid var(--DR20) !important;}
+.BDR40, .BDR40 select:focus, .BDR40 select:hover, .BDR40 select { border: 3px solid var(--DR40) !important;}
+.BDR60, .BDR60 select:focus, .BDR60 select:hover, .BDR60 select { border: 3px solid var(--DR60) !important;}
+  
+  /* Pink */
+.BbasePink , .BbasePink  select:focus, .BbasePink  select:hover, .BbasePink  select { border: 3px solid var(--basePink) !important;}
+.BLP20, .BLP20 select:focus, .BLP20 select:hover, .BLP20 select { border: 3px solid var(--LP20) !important;}
+.BLP40, .BLP40 select:focus, .BLP40 select:hover, .BLP40 select { border: 3px solid var(--LP40) !important;}
+.BLP60, .BLP60 select:focus, .BLP60 select:hover, .BLP60 select { border: 3px solid var(--LP60) !important;}
+.BDP20, .BDP20 select:focus, .BDP20 select:hover, .BDP20 select { border: 3px solid var(--DP20) !important;}
+.BDP40, .BDP40 select:focus, .BDP40 select:hover, .BDP40 select { border: 3px solid var(--DP40) !important;}
+.BDP60, .BDP60 select:focus, .BDP60 select:hover, .BDP60 select { border: 3px solid var(--DP60) !important;}
+
+ /* Gray */
+.BG100, .BG100 select:focus, .BG100 select:hover, .BG100 select { border: 3px solid var(--G100) !important;}
+.BG200, .BG200 select:focus, .BG200 select:hover, .BG200 select { border: 3px solid var(--G200) !important;}
+.BG300, .BG300 select:focus, .BG300 select:hover, .BG300 select { border: 3px solid var(--G300) !important;}
+.BG400, .BG400 select:focus, .BG400 select:hover, .BG400 select { border: 3px solid var(--G400) !important;}
+.BG500, .BG500 select:focus, .BG500 select:hover, .BG500 select { border: 3px solid var(--G500) !important;}
+.BG600, .BG600 select:focus, .BG600 select:hover, .BG600 select { border: 3px solid var(--G600) !important;}
+
+/* B O R D E R  T O P  C O L O R S */
+
+/* Blue */
+.BTbaseBlue { border-top-color: var(--baseBlue) !important; border-left-color: var(--baseBlue) !important}
+.BTLB20 { border-top-color: var(--LB20) !important; border-left-color: var(--LB20) !important}
+.BTLB40 { border-top-color: var(--LB40) !important; border-left-color: var(--LB40) !important}
+.BTLB60 { border-top-color: var(--LB60) !important; border-left-color: var(--LB60) !important}
+.BTDB20 { border-top-color: var(--DB20) !important; border-left-color: var(--DB20) !important}
+.BTDB40 { border-top-color: var(--DB40) !important; border-left-color: var(--DB40) !important}
+.BTDB60 { border-top-color: var(--DB60) !important; border-left-color: var(--DB60) !important}
+
+  /* Green */
+.BTbaseGreen { border-top-color: var(--baseGreen) !important; border-left-color: var(--baseGreen) !important}
+.BTLG20 { border-top-color: var(--LG20) !important; border-left-color: var(--LG20) !important}
+.BTLG40 { border-top-color: var(--LG40) !important; border-left-color: var(--LG40) !important}
+.BTLG60 { border-top-color: var(--LG60) !important; border-left-color: var(--LG60) !important}
+.BTDG20 { border-top-color: var(--DG20) !important; border-left-color: var(--DG20) !important}
+.BTDG40 { border-top-color: var(--DG40) !important; border-left-color: var(--DG40) !important}
+.BTDG60 { border-top-color: var(--DG60) !important; border-left-color: var(--DG60) !important}
+  
+  /* Orange */
+.BTbaseOrange { border-top-color: var(--baseOrange) !important; border-left-color: var(--baseOrange) !important}
+.BTLO20 { border-top-color: var(--LO20) !important; border-left-color: var(--LO20) !important}
+.BTLO40 { border-top-color: var(--LO40) !important; border-left-color: var(--LO40) !important}
+.BTLO60 { border-top-color: var(--LO60) !important; border-left-color: var(--LO60) !important}
+.BTDO20 { border-top-color: var(--DO20) !important; border-left-color: var(--DO20) !important}
+.BTDO40 { border-top-color: var(--DO40) !important; border-left-color: var(--DO40) !important}
+.BTDO60 { border-top-color: var(--DO60) !important; border-left-color: var(--DO60) !important}
+  
+  /* Red */
+.BTbaseRed { border-top-color: var(--baseRed) !important; border-left-color: var(--baseRed) !important}
+.BTLR20 { border-top-color: var(--LR20) !important; border-left-color: var(--LR20) !important}
+.BTLR40 { border-top-color: var(--LR40) !important; border-left-color: var(--LR40) !important}
+.BTLR60 { border-top-color: var(--LR60) !important; border-left-color: var(--LR60) !important}
+.BTDR20 { border-top-color: var(--DR20) !important; border-left-color: var(--DR20) !important}
+.BTDR40 { border-top-color: var(--DR40) !important; border-left-color: var(--DR40) !important}
+.BTDR60 { border-top-color: var(--DR60) !important; border-left-color: var(--DR60) !important}
+  
+  /* Pink */
+.BTbasePink  { border-top-color: var(--basePink) !important; border-left-color: var(--basePink) !important}
+.BTLP20 { border-top-color: var(--LP20) !important; border-left-color: var(--LP20) !important}
+.BTLP40 { border-top-color: var(--LP40) !important; border-left-color: var(--LP40) !important}
+.BTLP60 { border-top-color: var(--LP60) !important; border-left-color: var(--LP60) !important}
+.BTDP20 { border-top-color: var(--DP20) !important; border-left-color: var(--DP20) !important}
+.BTDP40 { border-top-color: var(--DP40) !important; border-left-color: var(--DP40) !important}
+.BTDP60 { border-top-color: var(--DP60) !important; border-left-color: var(--DP60) !important}
+
+/* Gray */
+.BTG100 { border-top-color: var(--G100) !important; border-left-color: var(--G100) !important}
+.BTG200 { border-top-color: var(--G200) !important; border-left-color: var(--G200) !important}
+.BTG300 { border-top-color: var(--G300) !important; border-left-color: var(--G300) !important}
+.BTG400 { border-top-color: var(--G400) !important; border-left-color: var(--G400) !important}
+.BTG500 { border-top-color: var(--G500) !important; border-left-color: var(--G500) !important}
+.BTG600 { border-top-color: var(--G600) !important; border-left-color: var(--G600) !important}
+
+/* C O L O R S   I N P U T S */
+
+  /* Blue */
+.IbaseBlue input, .IbaseBlue textarea { border: 2px solid var(--baseBlue) !important;}
+.ILB20 input, .ILB20 textarea { border: 2px solid var(--LB20) !important;}
+.ILB40 input, .ILB40 textarea { border: 2px solid var(--LB40) !important;}
+.ILB60 input, .ILB60 textarea { border: 2px solid var(--LB60) !important;}
+.IDB20 input, .IDB20 textarea { border: 2px solid var(--DB20) !important;}
+.IDB40 input, .IDB40 textarea { border: 2px solid var(--DB40) !important;}
+.IDB60 input, .IDB60 textarea { border: 2px solid var(--DB60) !important;}
+
+  /* Green */
+.IbaseGreen input, .IbaseGreen textarea { border: 2px solid var(--baseGreen) !important;}
+.ILG20 input, .ILG20 textarea { border: 2px solid var(--LG20) !important;}
+.ILG40 input, .ILG40 textarea { border: 2px solid var(--LG40) !important;}
+.ILG60 input, .ILG60 textarea { border: 2px solid var(--LG60) !important;}
+.IDG20 input, .IDG20 textarea { border: 2px solid var(--DG20) !important;}
+.IDG40 input, .IDG40 textarea { border: 2px solid var(--DG40) !important;}
+.IDG60 input, .IDG60 textarea { border: 2px solid var(--DG60) !important;}
+  
+  /* Orange */
+.IbaseOrange input, .IbaseOrange textarea { border: 2px solid var(--baseOrange) !important;}
+.ILO20 input, .ILO20 textarea { border: 2px solid var(--LO20) !important;}
+.ILO40 input, .ILO40 textarea { border: 2px solid var(--LO40) !important;}
+.ILO60 input, .ILO60 textarea { border: 2px solid var(--LO60) !important;}
+.IDO20 input, .IDO20 textarea { border: 2px solid var(--DO20) !important;}
+.IDO40 input, .IDO40 textarea { border: 2px solid var(--DO40) !important;}
+.IDO60 input, .IDO60 textarea { border: 2px solid var(--DO60) !important;}
+  
+  /* Red */
+.IbaseRed input, .IbaseRed textarea { border: 2px solid var(--baseRed) !important;}
+.ILR20 input, .ILR20 textarea { border: 2px solid var(--LR20) !important;}
+.ILR40 input, .ILR40 textarea { border: 2px solid var(--LR40) !important;}
+.ILR60 input, .ILR60 textarea { border: 2px solid var(--LR60) !important;}
+.IDR20 input, .IDR20 textarea { border: 2px solid var(--DR20) !important;}
+.IDR40 input, .IDR40 textarea { border: 2px solid var(--DR40) !important;}
+.IDR60 input, .IDR60 textarea { border: 2px solid var(--DR60) !important;}
+  
+  /* Pink */
+.IbasePink  input, .IbasePink  textarea { border: 2px solid var(--basePink) !important;}
+.ILP20 input, .ILP20 textarea { border: 2px solid var(--LP20) !important;}
+.ILP40 input, .ILP40 textarea { border: 2px solid var(--LP40) !important;}
+.ILP60 input, .ILP60 textarea { border: 2px solid var(--LP60) !important;}
+.IDP20 input, .IDP20 textarea { border: 2px solid var(--DP20) !important;}
+.IDP40 input, .IDP40 textarea { border: 2px solid var(--DP40) !important;}
+.IDP60 input, .IDP60 textarea { border: 2px solid var(--DP60) !important;}
+
+/* Gray */
+.IG100 input, .IG100 textarea { border: 2px solid var(--G100) !important;}
+.IG200 input, .IG200 textarea { border: 2px solid var(--G200) !important;}
+.IG300 input, .IG300 textarea { border: 2px solid var(--G300) !important;}
+.IG400 input, .IG400 textarea { border: 2px solid var(--G400) !important;}
+.IG500 input, .IG500 textarea { border: 2px solid var(--G500) !important;}
+.IG600 input, .IG600 textarea { border: 2px solid var(--G600) !important;}
+
+/* C O L O R S   I N P U T S   F O C U S*/
+
+/* Blue */
+.IbaseBlue input:focus { border: 3px solid var(--baseBlue) !important; outline: none !important;}
+.ILB20 input:focus { border: 3px solid var(--LB20) !important; outline: none !important;}
+.ILB40 input:focus { border: 3px solid var(--LB40) !important; outline: none !important;}
+.ILB60 input:focus { border: 3px solid var(--LB60) !important; outline: none !important;}
+.IDB20 input:focus { border: 3px solid var(--DB20) !important; outline: none !important;}
+.IDB40 input:focus { border: 3px solid var(--DB40) !important; outline: none !important;}
+.IDB60 input:focus { border: 3px solid var(--DB60) !important; outline: none !important;}
+
+  /* Green */
+.IbaseGreen input:focus { border: 3px solid var(--baseGreen) !important; outline: none !important;}
+.ILG20 input:focus { border: 3px solid var(--LG20) !important; outline: none !important;}
+.ILG40 input:focus { border: 3px solid var(--LG40) !important; outline: none !important;}
+.ILG60 input:focus { border: 3px solid var(--LG60) !important; outline: none !important;}
+.IDG20 input:focus { border: 3px solid var(--DG20) !important; outline: none !important;}
+.IDG40 input:focus { border: 3px solid var(--DG40) !important; outline: none !important;}
+.IDG60 input:focus { border: 3px solid var(--DG60) !important; outline: none !important;}
+  
+  /* Orange */
+.IbaseOrange input:focus { border: 3px solid var(--baseOrange) !important; outline: none !important;}
+.ILO20 input:focus { border: 3px solid var(--LO20) !important; outline: none !important;}
+.ILO40 input:focus { border: 3px solid var(--LO40) !important; outline: none !important;}
+.ILO60 input:focus { border: 3px solid var(--LO60) !important; outline: none !important;}
+.IDO20 input:focus { border: 3px solid var(--DO20) !important; outline: none !important;}
+.IDO40 input:focus { border: 3px solid var(--DO40) !important; outline: none !important;}
+.IDO60 input:focus { border: 3px solid var(--DO60) !important; outline: none !important;}
+  
+  /* Red */
+.IbaseRed input:focus { border: 3px solid var(--baseRed) !important; outline: none !important;}
+.ILR20 input:focus { border: 3px solid var(--LR20) !important; outline: none !important;}
+.ILR40 input:focus { border: 3px solid var(--LR40) !important; outline: none !important;}
+.ILR60 input:focus { border: 3px solid var(--LR60) !important; outline: none !important;}
+.IDR20 input:focus { border: 3px solid var(--DR20) !important; outline: none !important;}
+.IDR40 input:focus { border: 3px solid var(--DR40) !important; outline: none !important;}
+.IDR60 input:focus { border: 3px solid var(--DR60) !important; outline: none !important;}
+  
+  /* Pink */
+.IbasePink  input:focus { border: 3px solid var(--basePink) !important; outline: none !important;}
+.ILP20 input:focus { border: 3px solid var(--LP20) !important; outline: none !important;}
+.ILP40 input:focus { border: 3px solid var(--LP40) !important; outline: none !important;}
+.ILP60 input:focus { border: 3px solid var(--LP60) !important; outline: none !important;}
+.IDP20 input:focus { border: 3px solid var(--DP20) !important; outline: none !important;}
+.IDP40 input:focus { border: 3px solid var(--DP40) !important; outline: none !important;}
+.IDP60 input:focus { border: 3px solid var(--DP60) !important; outline: none !important;}
+
+/* Gray */
+.IG100 input:focus { border: 3px solid var(--G100) !important; outline: none !important;}
+.IG200 input:focus { border: 3px solid var(--G200) !important; outline: none !important;}
+.IG300 input:focus { border: 3px solid var(--G300) !important; outline: none !important;}
+.IG400 input:focus { border: 3px solid var(--G400) !important; outline: none !important;}
+.IG500 input:focus { border: 3px solid var(--G500) !important; outline: none !important;}
+.IG600 input:focus { border: 3px solid var(--G600) !important; outline: none !important;}
+
+/* S P A N  I N P U T */
+
+/* Blue */
+.SIbaseBlue input:checked ~ span { background-color: var(--baseBlue) !important; border: solid 3px var(--baseBlue) !important;}
+.SILB20 input:checked ~ span { background-color: var(--LB20) !important; border: solid 3px var(--LB20) !important;}
+.SILB40 input:checked ~ span { background-color: var(--LB40) !important; border: solid 3px var(--LB40) !important;}
+.SILB60 input:checked ~ span { background-color: var(--LB60) !important; border: solid 3px var(--LB60) !important;}
+.SIDB20 input:checked ~ span { background-color: var(--DB20) !important; border: solid 3px var(--DB20) !important;}
+.SIDB40 input:checked ~ span { background-color: var(--DB40) !important; border: solid 3px var(--DB40) !important;}
+.SIDB60 input:checked ~ span { background-color: var(--DB60) !important; border: solid 3px var(--DB60) !important;}
+
+  /* Green */
+.SIbaseGreen input:checked ~ span { background-color: var(--baseGreen) !important; border: solid 3px var(--baseGreen) !important;}
+.SILG20 input:checked ~ span { background-color: var(--LG20) !important; border: solid 3px var(--LG20) !important;}
+.SILG40 input:checked ~ span { background-color: var(--LG40) !important; border: solid 3px var(--LG40) !important;}
+.SILG60 input:checked ~ span { background-color: var(--LG60) !important; border: solid 3px var(--LG60) !important;}
+.SIDG20 input:checked ~ span { background-color: var(--DG20) !important; border: solid 3px var(--DG20) !important;}
+.SIDG40 input:checked ~ span { background-color: var(--DG40) !important; border: solid 3px var(--DG40) !important;}
+.SIDG60 input:checked ~ span { background-color: var(--DG60) !important; border: solid 3px var(--DG60) !important;}
+
+  /* Orange */
+.SIbaseOrange input:checked ~ span { background-color: var(--baseOrange) !important; border: solid 3px var(--baseOrange) !important;}
+.SILO20 input:checked ~ span { background-color: var(--LO20) !important; border: solid 3px var(--LO20) !important;}
+.SILO40 input:checked ~ span { background-color: var(--LO40) !important; border: solid 3px var(--LO40) !important;}
+.SILO60 input:checked ~ span { background-color: var(--LO60) !important; border: solid 3px var(--LO60) !important;}
+.SIDO20 input:checked ~ span { background-color: var(--DO20) !important; border: solid 3px var(--DO20) !important;}
+.SIDO40 input:checked ~ span { background-color: var(--DO40) !important; border: solid 3px var(--DO40) !important;}
+.SIDO60 input:checked ~ span { background-color: var(--DO60) !important; border: solid 3px var(--DO60) !important;}
+
+  /* Red */
+.SIbaseRed input:checked ~ span { background-color: var(--baseRed) !important; border: solid 3px var(--baseRed) !important;}
+.SILR20 input:checked ~ span { background-color: var(--LR20) !important; border: solid 3px var(--LR20) !important;}
+.SILR40 input:checked ~ span { background-color: var(--LR40) !important; border: solid 3px var(--LR40) !important;}
+.SILR60 input:checked ~ span { background-color: var(--LR60) !important; border: solid 3px var(--LR60) !important;}
+.SIDR20 input:checked ~ span { background-color: var(--DR20) !important; border: solid 3px var(--DR20) !important;}
+.SIDR40 input:checked ~ span { background-color: var(--DR40) !important; border: solid 3px var(--DR40) !important;}
+.SIDR60 input:checked ~ span { background-color: var(--DR60) !important; border: solid 3px var(--DR60) !important;}
+
+  /* Pink */
+.SIbasePink  input:checked ~ span { background-color: var(--basePink) !important; border: solid 3px var(--basePink) !important;}
+.SILP20 input:checked ~ span { background-color: var(--LP20) !important; border: solid 3px var(--LP20) !important;}
+.SILP40 input:checked ~ span { background-color: var(--LP40) !important; border: solid 3px var(--LP40) !important;}
+.SILP60 input:checked ~ span { background-color: var(--LP60) !important; border: solid 3px var(--LP60) !important;}
+.SIDP20 input:checked ~ span { background-color: var(--DP20) !important; border: solid 3px var(--DP20) !important;}
+.SIDP40 input:checked ~ span { background-color: var(--DP40) !important; border: solid 3px var(--DP40) !important;}
+.SIDP60 input:checked ~ span { background-color: var(--DP60) !important; border: solid 3px var(--DP60) !important;}
+
+/* Blue */
+.SIbaseBlue:hover input ~ span { border: solid 3px var(--baseBlue) !important;}
+.SILB20:hover input ~ span { border: solid 3px var(--LB20) !important;}
+.SILB40:hover input ~ span { border: solid 3px var(--LB40) !important;}
+.SILB60:hover input ~ span { border: solid 3px var(--LB60) !important;}
+.SIDB20:hover input ~ span { border: solid 3px var(--DB20) !important;}
+.SIDB40:hover input ~ span { border: solid 3px var(--DB40) !important;}
+.SIDB60:hover input ~ span { border: solid 3px var(--DB60) !important;}
+
+  /* Green */
+.SIbaseGreen:hover input ~ span { border: solid 3px var(--baseGreen) !important;}
+.SILG20:hover input ~ span { border: solid 3px var(--LG20) !important;}
+.SILG40:hover input ~ span { border: solid 3px var(--LG40) !important;}
+.SILG60:hover input ~ span { border: solid 3px var(--LG60) !important;}
+.SIDG20:hover input ~ span { border: solid 3px var(--DG20) !important;}
+.SIDG40:hover input ~ span { border: solid 3px var(--DG40) !important;}
+.SIDG60:hover input ~ span { border: solid 3px var(--DG60) !important;}
+  
+    /* Orange */
+.SIbaseOrange:hover input ~ span { border: solid 3px var(--baseOrange) !important;}
+.SILO20:hover input ~ span { border: solid 3px var(--LO20) !important;}
+.SILO40:hover input ~ span { border: solid 3px var(--LO40) !important;}
+.SILO60:hover input ~ span { border: solid 3px var(--LO60) !important;}
+.SIDO20:hover input ~ span { border: solid 3px var(--DO20) !important;}
+.SIDO40:hover input ~ span { border: solid 3px var(--DO40) !important;}
+.SIDO60:hover input ~ span { border: solid 3px var(--DO60) !important;}
+  
+    /* Red */
+.SIbaseRed:hover input ~ span { border: solid 3px var(--baseRed) !important;}
+.SILR20:hover input ~ span { border: solid 3px var(--LR20) !important;}
+.SILR40:hover input ~ span { border: solid 3px var(--LR40) !important;}
+.SILR60:hover input ~ span { border: solid 3px var(--LR60) !important;}
+.SIDR20:hover input ~ span { border: solid 3px var(--DR20) !important;}
+.SIDR40:hover input ~ span { border: solid 3px var(--DR40) !important;}
+.SIDR60:hover input ~ span { border: solid 3px var(--DR60) !important;}
+  
+    /* Pink */
+.SIbasePink:hover input ~ span { border: solid 3px var(--basePink) !important;}
+.SILP20:hover input ~ span { border: solid 3px var(--LP20) !important;}
+.SILP40:hover input ~ span { border: solid 3px var(--LP40) !important;}
+.SILP60:hover input ~ span { border: solid 3px var(--LP60) !important;}
+.SIDP20:hover input ~ span { border: solid 3px var(--DP20) !important;}
+.SIDP40:hover input ~ span { border: solid 3px var(--DP40) !important;}
+.SIDP60:hover input ~ span { border: solid 3px var(--DP60) !important;}
+
+/* Gray */
+.SIG100:hover input ~ span { border: solid 3px var(--G100) !important;}
+.SIG200:hover input ~ span { border: solid 3px var(--G200) !important;}
+.SIG300:hover input ~ span { border: solid 3px var(--G300) !important;}
+.SIG400:hover input ~ span { border: solid 3px var(--G400) !important;}
+.SIG500:hover input ~ span { border: solid 3px var(--G500) !important;}
+.SIG600:hover input ~ span { border: solid 3px var(--G600) !important;}
+
+.disabled, .disabled:hover input ~ span {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}

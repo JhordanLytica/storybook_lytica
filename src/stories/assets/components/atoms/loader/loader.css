@@ -1,0 +1,115 @@
+@import '../../settings/_variables.css';
+
+/* Balls */
+
+.bouncer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100px;
+    height: 100px;
+}
+
+.bouncer div {
+    width: 20px;
+    height: 20px;
+    background: var(--baseBlue);
+    border-radius: 50%;
+    animation: bouncers 0.5s cubic-bezier(.19, .57, .3, .98) infinite alternate;
+}
+
+.bouncer div:nth-child(2){
+    animation-delay: 0.1s;
+    opacity: 0.8;
+}
+.bouncer div:nth-child(3){
+    animation-delay: 0.2s;
+    opacity: 0.6;
+}
+.bouncer div:nth-child(4){
+    animation-delay: 0.3s;
+    opacity: 0.4;
+}
+
+@keyframes bouncers {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+}
+/* Spinner-One */
+.contenedorCarga {
+    position: relative;
+    display: block;
+    width: 67px;
+    height: 67px;
+}
+.contenedorCarga .carga {
+    border: 15px solid var(--G400);
+    border-top-color: var(--baseBlue);
+    border-left-color: var(--baseBlue);
+    border-top-style: groove;
+    border-left-style: groove;
+    height: 37.33px;
+    width: 37.33px;
+    border-radius: 100%;
+    position: absolute;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Spinner-Two */
+.loaderContainer {
+    position: relative;
+    width: 37.33px;
+    height: 37.33px;
+    margin: 10px;
+}
+
+.loaderContainer .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: solid 2px transparent;
+    border-top-color: var(--G300);
+    border-left-color: var(--G300);
+    border-radius: 50%;
+    animation: loader 1.2s linear infinite;
+}
+
+.loaderContainer .loader2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    border: solid 2px transparent;
+    border-top-color: var(--baseBlue);
+    border-left-color: var(--baseBlue);
+    border-radius: 50%;
+    animation: loader2 1.2s linear infinite;
+}
+
+@keyframes loader{
+    0%{
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes loader2{
+    0%{
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
