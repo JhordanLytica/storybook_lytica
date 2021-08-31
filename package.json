@@ -1,5 +1,5 @@
 {
-  "name": "storybook-lytica",
+  "name": "@JhordanLytica/storybook_lytica",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
