@@ -1,12 +1,14 @@
 {
-  "name": "storybook-lytica",
+  "name": "@JhordanLytica/storybook_lytica",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "@babel/cli": "^7.14.8",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "apexcharts": "^3.28.1",
+    "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-apexcharts": "^1.3.9",
     "react-calendar": "^3.4.0",
@@ -17,16 +19,27 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=45c99365e8bd"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
-  "repository":"https://github.com/JhordanLytica/storybook_lytica.git",
+  "repository": "https://github.com/JhordanLytica/storybook_lytica.git",
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -61,6 +74,11 @@
     "@storybook/addon-links": "^6.3.7",
     "@storybook/node-logger": "^6.3.7",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.7"
-  }
+    "@storybook/react": "^6.3.7",
+    "auto": "^10.31.0"
+  },
+  "description": "Storybook design systems ",
+  "main": "index.js",
+  "author": "JhordanLytica <jhordan.duran@lytica.ai>",
+  "license": "MIT"
 }
